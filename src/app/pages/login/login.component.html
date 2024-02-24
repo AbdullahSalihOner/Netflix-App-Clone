@@ -1,0 +1,110 @@
+<div class="body">
+
+    <!-- header -->
+    <div class="header">
+        <!--navbar start-->
+        <nav>
+            <img class="logo" src="../../../assets/logo.png" alt="logo" (click)="goToMainPage()">
+        </nav>
+        <!--navbar end-->
+       
+        <div id="main">
+            <form [formGroup]="loginForm" class="field-form">
+              <h1>Sign in</h1>
+          
+              <mat-form-field class="example-full-width">
+                <mat-label>Email or phone number</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+              </mat-form-field>
+              <h3 id="emailcheck"></h3>
+          
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" placeholder="Password">
+              </mat-form-field>
+              <h3 id="passcheck"></h3>
+          
+              <button mat-raised-button color="primary" (click)="login()" [disabled]="isDisableForFormGroup()">Sign In</button>
+          
+              <div class="spans">
+                <span id="first"><i class="fa fa-check-square" aria-hidden="true"></i> Remember me</span>
+                <span id="sec"><a href="needhelp.html" id="need">Need help?</a></span>
+              </div>
+          
+              <div class="log"></div>
+          
+              <div class="third">
+                <span>Not on Netflix?</span>
+                <span id="span2"><button id="sign" (click)="goToRegister()">Sign up now</button></span>
+              </div>
+            </form>
+          </div>
+
+
+
+
+
+
+    </div>
+    <!-- end of header -->
+
+
+    
+    
+    <!--footer start-->
+    <div class="footer">
+        <h2>Questions? Call 000-000-000-0000</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="col">
+                <a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <button class="lang-btn"><i class="fa-solid fa-globe"></i> English <img src="../../../assets/down-icon.png"></button>
+
+        <p class="copyright-text">Netflix Türkiye</p>
+    </div>
+    <!--footer end-->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
