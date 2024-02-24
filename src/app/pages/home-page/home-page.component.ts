@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MovieService } from '../../services/movie.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
+  constructor(private _movieService: MovieService) { }
 
+  ngOnInit() : void{
+    this._movieService.getMovies().subscribe(
+      data => {
+        console.log(data);
+      }
+    )
+  }
 }
