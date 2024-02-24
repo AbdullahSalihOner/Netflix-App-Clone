@@ -28,6 +28,11 @@ nav {
     padding: 10px 0;
 }
 
+nav div {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     width: 150px;
     cursor: pointer;

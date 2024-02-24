@@ -10,7 +10,7 @@
        
         <div id="main">
             <form [formGroup]="registerForm" class="field-form">
-              <h1>Sign up</h1>
+              <h1 class="header-h1">Sign up</h1>
           
               <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
@@ -38,7 +38,7 @@
                 </mat-form-field>
               </div>
           
-              <button mat-raised-button color="primary" (click)="register()" [disabled]="isDisableForFormGroup()"
+              <button mat-raised-button style="cursor: pointer;" color="primary" (click)="register()" [disabled]="isDisableForFormGroup()"
                 >Sign Up</button>
           
               <div class="spans">

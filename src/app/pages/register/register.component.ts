@@ -94,6 +94,6 @@ export class RegisterComponent {
   }
 
   goToMainPage() {
-  this._router.navigateByUrl("/landing-page");
+    this._router.navigateByUrl("/landing");
   }
 }

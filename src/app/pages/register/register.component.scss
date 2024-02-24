@@ -6,7 +6,7 @@
 }
 
 
-.body{
+.body {
     background-color: #000;
     color: #fff;
 }
@@ -14,7 +14,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../assets/header-image.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../../assets/header-image.png);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -56,7 +56,7 @@ nav button {
 .lang-btn img {
     width: 10px;
     margin-left: 10px;
-} 
+}
 
 .fa-globe {
     color: #fff;
@@ -68,7 +68,7 @@ nav button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 100px;
 }
@@ -126,7 +126,8 @@ nav button {
     padding: 50px 0;
 }
 
-.text-col, .img-col {
+.text-col,
+.img-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
@@ -202,12 +203,12 @@ input[type="radio"] {
     transition: max-height 0.5s, padding 0.5s;
 }
 
-.accordion input[type="radio"]:checked + label + .content {
+.accordion input[type="radio"]:checked+label+.content {
     max-height: 600px;
     padding: 30px 20px;
 }
 
-.accordion input[type="radio"]:checked + label::after {
+.accordion input[type="radio"]:checked+label::after {
     transform: rotate(135deg);
 }
 
@@ -274,37 +275,39 @@ input[type="radio"] {
     height: 670px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* Center the form horizontally */
-    border: 1px solid black; /* Adjust border style */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    border: 1px solid black;
+    /* Adjust border style */
     padding: 60px 60px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     position: absolute;
     z-index: 3;
-    top: 50%; /* Center the form vertically */
+    top: 50%;
+    /* Center the form vertically */
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  form h1 {
+}
+
+
+form h1 {
     color: white;
     font-weight: bold;
     padding-bottom: 20px;
-  }
-  
-  form input {
-    background: rgb(34, 34, 34);
-    align-items: center;
+}
+
+form mat-form-field {
+    width: 100%;
+}
+
+
+.header-h1{
+    text-align: center;
     justify-content: center;
-    width: 340px;
-    height: 50px;
-    border: 0;
-    border-radius: 5px;
-    padding: 14px 25px;
-    color: white;
-  }
-  
-  form button {
+}
+
+form button {
     border: 0;
     border-radius: 3px;
     background: red;
@@ -312,56 +315,57 @@ input[type="radio"] {
     height: 50px;
     color: white;
     font-weight: bold;
-  }
-  
-  span {
+    cursor: pointer;
+}
+
+span {
     justify-content: space-between;
-  }
-  
-  .spans {
+}
+
+.spans {
     padding-top: 10px;
-  }
-  
-  #first {
+}
+
+#first {
     color: gray;
-  }
-  
-  #sec {
+}
+
+#sec {
     padding-right: 5px;
     padding-left: 100px;
     color: gray;
-  }
-  
-  .log {
+}
+
+.log {
     color: gray;
     padding-top: 20px;
     padding-bottom: 10px;
-  }
-  
-  #fb {
+}
+
+#fb {
     color: white;
     background: blue;
     width: 20px;
     padding: 2px 5px;
     margin-right: 2px;
-  }
-  
-  .third,
-  .four {
+}
+
+.third,
+.four {
     color: gray;
-  }
-  
-  .four {
+}
+
+.four {
     padding-top: 10px;
     font-size: 13px;
-  }
-  
-  #span2 {
+}
+
+#span2 {
     font-weight: 400;
     font-size: 18px;
     color: white;
-  }
-  
+}
+
 
 
 
@@ -394,7 +398,8 @@ input[type="radio"] {
         padding: 10px 15px;
     }
 
-    .text-col, .img-col {
+    .text-col,
+    .img-col {
         flex-basis: 100%;
     }
 
@@ -406,7 +411,8 @@ input[type="radio"] {
         font-size: 15px;
     }
 
-    .row:nth-child(2), .row:nth-child(4) {
+    .row:nth-child(2),
+    .row:nth-child(4) {
         flex-direction: column-reverse;
     }
 
