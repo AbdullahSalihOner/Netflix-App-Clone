@@ -1,0 +1,87 @@
+// Reset some default styles
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  // Make the iframe fill the entire width and height
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  // Style the container div
+  .h-screen {
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  // Style the inner container with padding and absolute positioning
+.pt-15 {
+    padding-top: 15%;
+    position: absolute;
+  }
+  
+  // Apply gradient background
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #000, transparent);
+  }
+  
+  // Style the heading
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+  
+  // Style the paragraph
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  // Style the button
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  // Style the Play button
+  .bg-white {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .hover\:bg-opacity-70:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+.transition-1s {
+    transition: background-color 1s ease;
+  }
+  
+  // Style the More Info button
+  .bg-gray-500 {
+    background-color: #808080;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .bg-opacity-50 {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+  

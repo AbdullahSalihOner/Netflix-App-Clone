@@ -1,0 +1,79 @@
+// Header styles
+header {
+    height: 68px;
+    z-index: 10;
+    background-color: #1a1a1a; /* equivalent to bg-gray-900 */
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* equivalent to px-10 */
+  }
+  
+  // Logo and nav items container
+  header > div:first-child {
+    display: flex;
+    gap: 5px;
+  }
+  
+  // Logo styles
+  header img {
+    width: 110px;
+  }
+  
+  // Navigation list styles
+  header ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  // Individual navigation item styles
+  header li {
+    color: #e1e1e1; /* equivalent to text-neutral-200 */
+    cursor: pointer;
+    font-size: 0.875rem; /* equivalent to text-sm */
+    font-weight: 200; /* equivalent to font-extralight */
+    transition: color 1s; /* equivalent to transition-[1s] */
+  }
+  
+  header li:hover {
+    color: #9a9a9a; /* equivalent to hover:text-gray-400 */
+  }
+  
+  // Welcome user, profile image, and signout container
+  header > div:last-child {
+    color: #fff; /* equivalent to text-white */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  // Welcome user and profile image container
+  header > div:last-child > div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  // Username styles
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header strong {
+    font-weight: bold;
+  }
+  
+  // User image styles
+  header img[src^="data:image"] {
+    /* handle userImg as a data URI */
+    width: 42px;
+  }
+  
+  // Signout link styles
+  header a:last-child {
+    cursor: pointer;
+  }
+  

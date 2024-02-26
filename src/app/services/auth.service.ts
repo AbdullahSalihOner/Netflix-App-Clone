@@ -20,6 +20,10 @@ export class AuthService {
     localStorage.setItem(GlobalKeys.REGISTER, obj); 
   }
 
+  signOut(){
+    localStorage.removeItem(GlobalKeys.LOGIN);
+  }
+
   getUsers(){
     const users = JSON.parse(localStorage.getItem(GlobalKeys.REGISTER) || '[]')
     return users;

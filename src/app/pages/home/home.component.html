@@ -1,0 +1,209 @@
+<div class="header">
+  <!--navbar start-->
+  <nav>
+      <img class="logo" src="../../../assets/logo.png" alt="logo" >
+      <div>
+         
+      </div>
+  </nav>
+  <!--navbar end-->
+
+
+
+  
+ 
+
+</div>
+<!-- end of header -->
+
+
+
+
+  
+  <div class="contain mt-3 mb-5 p-4">
+  
+    <!-- trending movies  -->
+    <div class="row">
+      <h5 class="text-white">Trending Movies</h5>
+      <div class="rowposter mt-3 p-2">
+      
+
+        
+        @for (t of trendingMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(t.id)">
+              </ng-container>
+        }
+  
+      </div>
+  
+    </div>
+  
+    <!-- action movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Action Movies</h5>
+      <div class="rowposter mt-3 p-2">
+       
+
+        @for (a of actionMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(a.id)">
+              </ng-container>
+        }
+
+  
+      </div>
+  
+    </div>
+  
+    <!-- adventure movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">adventure Movies</h5>
+      <div class="rowposter mt-3 p-2">
+
+        @for (a of adventureMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(a.id)">
+              </ng-container>
+        }
+
+        
+  
+      </div>
+  
+    </div>
+  
+  
+    <!-- animation movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Animation Movies</h5>
+      <div class="rowposter mt-3 p-2">
+      
+
+        @for (a of animationMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(a.id)">
+              </ng-container>
+        }
+  
+      </div>
+  
+    </div>
+  
+    <!-- comedy movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Comedy Movies</h5>
+      <div class="rowposter mt-3 p-2">
+
+        @for (c of comedyMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ c.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(c.id)">
+              </ng-container>
+        }
+        
+
+        
+  
+      </div>
+  
+    </div>
+  
+    <!-- documentary movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Documentary Movies</h5>
+      <div class="rowposter mt-3 p-2">
+        
+        @for (d of documentaryMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(d.id)">
+              </ng-container>
+        }
+  
+      </div>
+  
+    </div>
+  
+    <!-- science-fiction movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Science-Fiction Movies</h5>
+      <div class="rowposter mt-3 p-2">
+
+        @for (sf of sciencefictionMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ sf.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(sf.id)">
+              </ng-container>
+        }
+  
+      </div>
+  
+    </div>
+  
+    <!-- thriller movies  -->
+    <div class="row mt-4">
+      <h5 class="text-white">Thriller Movies</h5>
+      <div class="rowposter mt-3 p-2">
+        @for (th of thrillerMovieResult; track $index) {
+
+            <ng-container >
+                <img src="https://image.tmdb.org/t/p/original/{{ th.poster_path }}" class="rowimg largeposter" alt="..."
+                  (click)="navigateToMovie(th.id)">
+              </ng-container>
+        }
+        
+  
+      </div>
+  
+    </div>
+    
+
+
+     <!--footer start-->
+     <div class="footer">
+      <h2>Questions? Call 000-000-000-0000</h2>
+
+      <div class="row">
+          <div class="col">
+              <a href="#">FAQ</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Privacy</a>
+              <a href="#">Speed Test</a>
+          </div>
+          <div class="col">
+              <a href="#">Help Centre</a>
+              <a href="#">Jobs</a>
+              <a href="#">Cookie Preferences</a>
+              <a href="#">Legal Notices</a>
+          </div>
+          <div class="col">
+              <a href="#">Account</a>
+              <a href="#">Ways to Watch</a>
+              <a href="#">Corporate Information</a>
+              <a href="#">Only on Netflix</a>
+          </div>
+          <div class="col">
+              <a href="#">Media Centre</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Contact Us</a>
+          </div>
+      </div>
+
+      <button class="lang-btn"><i class="fa-solid fa-globe"></i> English <img src="../../../assets/down-icon.png"></button>
+
+      <p class="copyright-text">Netflix Türkiye</p>
+  </div>
+  <!--footer end-->
+  </div>

@@ -31,7 +31,7 @@ export class LoginComponent {
       if (user.email === this.loginForm.get("email")?.value && user.password === this.loginForm.get("password")?.value) {
         this._authService.login(this.loginForm.value);
         this.isLogin = true;
-        this._router.navigateByUrl("/home");
+        this._router.navigateByUrl("/main");
       }
     })
     if (!this.isLogin) {
